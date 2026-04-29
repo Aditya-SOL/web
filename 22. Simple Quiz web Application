@@ -15,40 +15,19 @@
             width: 400px; 
         } 
     </style> 
- 
-     
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 <script> 
 function checkScore() { 
 let score = 0; 
 if(document.querySelector('input[name="q1"]:checked')?.value == "4") score++; 
-if(document.querySelector('input[name="q2"]:checked')?.value == "Paris") 
-score++; 
-score++; 
-score++; 
-score++; 
-score++; 
-score++; 
-score++; 
-score++; 
-if(document.querySelector('input[name="q3"]:checked')?.value == "HTML") 
-if(document.querySelector('input[name="q4"]:checked')?.value == "CPU") 
-if(document.querySelector('input[name="q5"]:checked')?.value == "CSS") 
+if(document.querySelector('input[name="q2"]:checked')?.value == "Paris") score++; 
+if(document.querySelector('input[name="q3"]:checked')?.value == "HTML") score++; 
+if(document.querySelector('input[name="q4"]:checked')?.value == "CPU") score++;
+if(document.querySelector('input[name="q5"]:checked')?.value == "CSS") score++;
 if(document.querySelector('input[name="q6"]:checked')?.value == "JavaScript") 
 if(document.querySelector('input[name="q7"]:checked')?.value == "5") score++; 
-if(document.querySelector('input[name="q8"]:checked')?.value == "RAM") 
-if(document.querySelector('input[name="q9"]:checked')?.value == "HTTP") 
-if(document.querySelector('input[name="q10"]:checked')?.value == "India") 
+if(document.querySelector('input[name="q8"]:checked')?.value == "RAM") score++; 
+if(document.querySelector('input[name="q9"]:checked')?.value == "HTTP") score++; 
+if(document.querySelector('input[name="q10"]:checked')?.value == "India") score++; 
 document.getElementById("result").innerHTML = "Your Score: " + score + "/10"; 
 return false; 
 } 
@@ -91,4 +70,4 @@ Q10: Country name?<br>
 </form> 
 <h3 id="result"></h3> 
 </body> 
-</html> 
+</html>
